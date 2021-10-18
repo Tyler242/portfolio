@@ -16,7 +16,7 @@ import json
 def get_file():
     '''User will select which board they would like to play'''
     easy = 'boards/131.05.Easy.json'
-    medium = 'boards/131.05.Medium.jon'
+    medium = 'boards/131.05.Medium.json'
     hard = 'boards/131.05.Hard.json'
 
     print('Difficutly:\n'
@@ -139,15 +139,33 @@ def get_num(square, valid_nums):
     while not(done):
         # Make sure we get an integer from the user.
         try:
-            num = int(input('What number goes in ' +
-                      chr(square[1] + ord('A')) + str(square[0]+1) + '? '))
+            num = input('What number goes in ' +
+                        chr(square[1] + ord('A')) + str(square[0]+1) +
+                        ' (Press S to see possible values)?')
 
-            # Make sure the integer is within the acceptable range.
-            if num > 0 and num < 10:
-                done = False
-
+            if num == 's' or num == 'S':
+                print(valid_nums)
             else:
-                print('ERROR: The value ', num,  'is invalid.')
+                # Make sure the integer is within the acceptable range.
+                num = int(num)
+                valid = False
+                count = 0
+
+                if num < 1 or num > 9:
+                    print('ERROR: The value ', num,  'is invalid.')
+
+                else:
+                    while not(valid) and count <= (len(valid_nums) - 1):
+
+                        if valid_nums[count] == num:
+                            valid = True
+                            done = True
+
+                        count += 1
+
+                    if valid == False:
+                        print("Number cannot be placed in square.")
+
         except:
             print('ERROR: Input must be an integer.')
 

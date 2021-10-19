@@ -15,9 +15,9 @@ import json
 
 def get_file():
     '''User will select which board they would like to play'''
-    easy = 'boards/131.05.Easy.json'
-    medium = 'boards/131.05.Medium.json'
-    hard = 'boards/131.05.Hard.json'
+    easy = 'Sudoku/boards/131.05.Easy.json'
+    medium = 'Sudoku/boards/131.05.Medium.json'
+    hard = 'Sudoku/boards/131.05.Hard.json'
 
     print('Difficutly:\n'
           'Enter 1 for easy.\n'
@@ -141,7 +141,7 @@ def get_num(square, valid_nums):
         try:
             num = input('What number goes in ' +
                         chr(square[1] + ord('A')) + str(square[0]+1) +
-                        ' (Press S to see possible values)?')
+                        ' (Press S to see possible values)? ')
 
             if num == 's' or num == 'S':
                 print(valid_nums)
@@ -152,7 +152,7 @@ def get_num(square, valid_nums):
                 count = 0
 
                 if num < 1 or num > 9:
-                    print('ERROR: The value ', num,  'is invalid.')
+                    print('ERROR: The value', num,  'is invalid.')
 
                 else:
                     while not(valid) and count <= (len(valid_nums) - 1):

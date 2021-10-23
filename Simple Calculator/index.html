@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Calculator</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/Simple Calculator/styles.css" />
+    <script src="/Simple Calculator/main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <input type="text" id="input" disabled />
+      <button class="one" onclick="update_equ(1)">1</button>
+      <button class="two" onclick="update_equ(2)">2</button>
+      <button class="three" onclick="update_equ(3)">3</button>
+      <button class="four" onclick="update_equ(4)">4</button>
+      <button class="five" onclick="update_equ(5)">5</button>
+      <button class="six" onclick="update_equ(6)">6</button>
+      <button class="seven" onclick="update_equ(7)">7</button>
+      <button class="eight" onclick="update_equ(8)">8</button>
+      <button class="nine" onclick="update_equ(9)">9</button>
+      <button class="zero" onclick="update_equ(0)">0</button>
+      <button class="equal" onclick="compute()">=</button>
+      <button class="add" onclick="update_equ('+')">+</button>
+      <button class="sub" onclick="update_equ('-')">-</button>
+      <button class="mult" onclick="update_equ('*')">*</button>
+      <button class="div" onclick="update_equ('/')">/</button>
+      <button class="ce" onclick="update_equ('ce')">ce</button>
+    </main>
+    <p>
+      This is a very simple calculator. It is built to hande the order of
+      operations for addition, subtraction, multiplication, and division of
+      positive numbers.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+#main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 700px;
+  section {
+    margin: 10px;
+  }
+}
+
+#head {
+  display: flex;
+  align-items: center;
+}

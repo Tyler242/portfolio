@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the forecast for Soda Springs, Idaho"
+    />
+    <!-- JS scripts -->
+    <script src="/lesson11/js/date.js" defer></script>
+    <script src="/lesson11/js/nav.js" defer></script>
+    <script src="/lesson11/js/events.js" defer></script>
+    <script src="/lesson11/js/weatherApi.js" defer></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      defer
+    ></script>
+    <script src="/lesson11/js/webfontload.js" defer></script>
+    <!-- CSS links -->
+    <link rel="stylesheet" type="text/css" href="/normalize/normalize.css" />
+    <link rel="stylesheet" href="/lesson11/css/header_footer.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/lesson11/css/towns/town-template.css" />
+    <link rel="stylesheet" href="/lesson11/css/towns/hero-section.css" />
+    <link rel="stylesheet" href="/lesson11/css/towns/five-day-forecast.css" />
+    <link rel="stylesheet" href="/lesson11/css/towns/article.css" />
+    <link rel="stylesheet" href="/lesson11/css/towns/events.css" />
+    <title id="Soda-Springs">Soda Springs, ID | Outsite Yet?</title>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <img src="/lesson11/img/outsideyet_icon.png" alt="Outside Yet Logo" />
+        <div>
+          <h1>Outside Yet?</h1>
+          <p>Discover the weather before going out</p>
+        </div>
+      </div>
+      <nav>
+        <a href="javascript:void(0)" class="icon" onclick="navMenu()">
+          <span class="material-icons"> menu </span>
+        </a>
+        <ul id="nav">
+          <li><a href="/lesson11/home.html">Home</a></li>
+          <li><a href="/lesson11/preston.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="/lesson11/fish_haven.html">Fish Haven</a></li>
+          <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+          <li><a href="/lesson11/gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Soda Springs</h2>
+      <div class="hero-section">
+        <picture>
+          <source
+            media="(max-width: 380px)"
+            srcset="/lesson11/img/sodasprings/soda-springs.jpg"
+          />
+          <source
+            media="(min-width: 381px) and (max-width:750px)"
+            srcset="/lesson11/img/sodasprings/soda-springs1280.jpg"
+          />
+          <source
+            media="(min-width: 751px) and (max-width:1280px)"
+            srcset="/lesson11/img/sodasprings/soda-springs1920.jpg"
+          />
+          <img
+            class="hero-img"
+            src="/lesson11/img/sodasprings/soda-springs1280.jpg"
+            alt="A geyser near Soda Springs"
+          />
+        </picture>
+        <aside class="w-summary">
+          <h4>Weather Summary</h4>
+          <p>
+            Currently: <span id="current"></span><br />
+            High: <span id="temp"></span> &deg;F<br />
+            Wind Chill: <span id="windChill"></span> &deg;F<br />
+            Humidity: <span id="humidity"></span>%<br />
+            Wind Speed: <span id="windSpeed"></span> mph
+          </p>
+        </aside>
+      </div>
+      <section class="five-day">
+        <h3>Five Day Forecast</h3>
+        <hr />
+        <div class="five-day-img">
+          <div class="img-1">
+            <p class="5-day">Mon</p>
+            <img class="weather-img" src="" alt="" />
+            <p class="five-day-temp"><span class="5-temp"></span>&deg;F</p>
+          </div>
+          <div class="img-1">
+            <p class="5-day">Tue</p>
+            <img class="weather-img" src="" alt="" />
+            <p class="five-day-temp"><span class="5-temp"></span>&deg;F</p>
+          </div>
+          <div class="img-1">
+            <p class="5-day">Wed</p>
+            <img class="weather-img" src="" alt="" />
+            <p class="five-day-temp"><span class="5-temp"></span>&deg;F</p>
+          </div>
+          <div class="img-1">
+            <p class="5-day">Thu</p>
+            <img class="weather-img" src="" alt="" />
+            <p class="five-day-temp"><span class="5-temp"></span>&deg;F</p>
+          </div>
+          <div class="img-1">
+            <p class="5-day">Fri</p>
+            <img class="weather-img" src="" alt="" />
+            <p class="five-day-temp"><span class="5-temp"></span>&deg;F</p>
+          </div>
+        </div>
+      </section>
+      <article class="clearfix">
+        <img
+          src="/lesson11/img/sodasprings/soda-springs-article.jpg"
+          alt="View of the sky and mountains"
+        />
+        <h3>Soda Springs Idaho | sodaspringsid.com</h3>
+        <p>
+          Know as the Oregon Trail Oasis, Soda Springs and the surrounding area
+          has a great history. Pioneers headed towards California and Oregon
+          traveled through this area and many stopped because of the abundance
+          of water and natural springs. Soda Springs is also home to the only
+          captive Geyser in the world. Come pay us a visit!
+        </p>
+        <a
+          class="button-link"
+          href="https://www.sodaspringsid.com/"
+          target="_blank"
+          >Visit Soda Springs</a
+        >
+      </article>
+      <section id="events">
+        <h3>Upcoming Events:</h3>
+        <div id="events-list"></div>
+      </section>
+    </main>
+    <footer>
+      <section class="contact-info">
+        <h3>Contact Information</h3>
+        <ul class="contact">
+          <li>104 S 3rd W<br>
+          Soda Springs, ID 83276</li>
+          <li>208-999-0001</li>
+          <li>outsideyet@oyw.com</li>
+        </ul>
+        <ul class="social">
+          <li>
+            <a href="#"
+              ><img src="/lesson11/img/twitter.png" alt="Twitter icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/lesson11/img/youtube.png" alt="Youtube icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/lesson11/img/facebook.png" alt="Facebook icon"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <div class="img-container">
+        <img
+          src="/lesson11/img/sodasprings/sodaspringsmap.png"
+          alt="Map of Preston Idaho"
+        />
+      </div>
+      <div id="date">
+        <p id="date-p"></p>
+        <p>Weather info gathered from openweathermap.org</p>
+      </div>
+    </footer>
+  </body>
+</html>

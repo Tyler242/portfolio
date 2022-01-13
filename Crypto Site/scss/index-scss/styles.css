@@ -1,0 +1,98 @@
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+marquee {
+  height: 20px;
+  margin-bottom: -5px;
+  background-color: lightgreen;
+}
+
+#crypto-links {
+  width: 90%;
+  margin: 20px auto;
+}
+
+#crypto-links h2,
+#crypto-links p {
+  text-align: center;
+}
+
+#main-content #welcome {
+  width: 90%;
+  margin: 20px auto;
+}
+
+#main-content #welcome img {
+  width: 100%;
+}
+
+#main-content #news {
+  display: block;
+  background-color: #eaeaea;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 6px;
+}
+
+#main-content #news .news-sect {
+  width: 90%;
+  margin: 20px auto;
+  background-color: lightcyan;
+  padding-bottom: 15px;
+}
+
+#main-content #news .news-sect img {
+  width: 100%;
+}
+
+#main-content #news .news-sect p {
+  margin-top: -10px;
+}
+
+#main-content #news .news-sect h3,
+#main-content #news .news-sect p {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#main-content #news .news-sect a:link,
+#main-content #news .news-sect a:visited {
+  text-decoration: none;
+  color: black;
+  background-color: #a7a2a9;
+  padding: 5px 5px;
+}
+
+#main-content #news .news-sect a:hover {
+  color: white;
+}
+
+#main-content #learn {
+  width: 90%;
+  margin: 0px auto 20px auto;
+  text-align: center;
+}
+
+#main-content #learn a:link,
+#main-content #learn a:visited {
+  text-decoration: none;
+  color: black;
+  background-color: #a7a2a9;
+  padding: 5px 5px;
+}
+
+#main-content #learn a:hover {
+  color: white;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,20 @@
+main {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.news-selection {
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+#news {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  section {
+    width: auto;
+  }
+}

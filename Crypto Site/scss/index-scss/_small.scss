@@ -1,0 +1,78 @@
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+marquee {
+  height: 20px;
+  margin-bottom: -5px;
+  background-color: lightgreen;
+}
+
+#crypto-links {
+  width: 90%;
+  h2,
+  p {
+    text-align: center;
+  }
+  margin: 20px auto;
+}
+
+#main-content {
+  #welcome {
+    width: 90%;
+    margin: 20px auto;
+    img {
+      width: 100%;
+    }
+  }
+  #news {
+    display: block;
+    background-color: $light-gray;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 6px;
+    .news-sect {
+      width: 90%;
+      margin: 20px auto;
+      background-color: lightcyan;
+      padding-bottom: 15px;
+      img {
+        width: 100%;
+      }
+      p {
+        margin-top: -10px;
+      }
+      h3,
+      p {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: black;
+        background-color: $silver-metalic;
+        padding: 5px 5px;
+      }
+      a:hover {
+        color: white;
+      }
+    }
+  }
+  #learn {
+    width: 90%;
+    margin: 0px auto 20px auto;
+    text-align: center;
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: black;
+      background-color: $silver-metalic;
+      padding: 5px 5px;
+    }
+    a:hover {
+      color: white;
+    }
+  }
+}

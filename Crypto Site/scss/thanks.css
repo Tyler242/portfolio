@@ -1,0 +1,8 @@
+main {
+  max-width: 960px;
+  width: 90%;
+  margin: 28vh auto;
+}
+main p {
+  line-height: 1.5rem;
+}

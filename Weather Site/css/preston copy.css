@@ -1,0 +1,158 @@
+:root {
+  --background-color: #b3c5d7;
+  --popout-box: #7392b7;
+  --text-color: #131b23;
+  --text-color2: #d8e1e9;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Emergency Banner */
+#eBanner {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  background-color: yellow;
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  position: relative;
+  margin-bottom: 100px;
+}
+.hero-section aside {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 250px;
+  border: 2px solid var(--text-color);
+  background-color: var(--popout-box);
+  opacity: 0.9;
+}
+.hero-section aside h4 {
+  padding-left: 10px;
+}
+.hero-section aside p {
+  padding-left: 10px;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/* Five day forecast pop-out */
+.five-day {
+  max-width: 760px;
+  margin: 0 auto;
+  background-color: var(--popout-box);
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
+}
+.five-day h3 {
+  padding-left: 30px;
+}
+.five-day hr {
+  color: black;
+  background-color: black;
+  width: auto;
+  height: 1px;
+  border: 0px;
+}
+.five-day-img p {
+  margin-top: 0px;
+}
+.five-day-img {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+  text-align: center;
+}
+.material-icons.yellow {
+  color: yellow;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.five-day-temp {
+  padding: 10px 0 0 0;
+}
+
+/* Article Section */
+article {
+  box-shadow: gray 2px 5px 10px;
+  border: 2px solid black;
+  max-width: 760px;
+  margin: 100px auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 16px;
+}
+
+article img {
+  width: 30%;
+  padding-top: 10px;
+  float: right;
+}
+
+.button-link:visited,
+.button-link:link {
+  text-decoration: none;
+  background-color: var(--text-color2);
+  padding: 5px;
+  border: 1px gray solid;
+  border-radius: 4px;
+  color: var(--text-color);
+}
+.button-link:hover {
+  background-color: #b4babe;
+}
+
+/* MEDIUM SCREENS */
+@media screen and (max-width: 760px) {
+  main {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+  .hero-section {
+    width: 100%;
+    display: block;
+    position: unset;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .hero-section aside {
+    position: unset;
+    padding-left: 20px;
+    width: unset;
+    border: unset;
+    background-color: unset;
+    opacity: unset;
+  }
+  article img {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* SMALLEST SCREENS */
+@media screen and (max-width: 420px) {
+  .five-day {
+    display: none;
+  }
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}

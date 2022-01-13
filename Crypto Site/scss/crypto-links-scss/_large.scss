@@ -1,0 +1,10 @@
+#crypto-ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  li:nth-of-type(odd) {
+    grid-column: 1;
+  }
+  li:nth-of-type(even) {
+    grid-column: 2;
+  }
+}

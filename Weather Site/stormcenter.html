@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- JavaScript Files -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      defer
+    ></script>
+    <script src="/lesson11/js/date.js" defer></script>
+    <script src="/lesson11/js/nav.js" defer></script>
+    <script src="/lesson11/js/webfontload.js" defer></script>
+    <script src="/lesson11/js/stormJS/stomcenter.js" defer></script>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="/normalize/normalize.css" />
+    <link rel="stylesheet" href="/lesson11/css/header_footer.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/lesson11/css/stormcenter.css" />
+    <title id="Storm-Center">Storm Center | Outside Yet?</title>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <img src="/lesson6/images/outsideyet_icon.png" alt="Outside Yet Logo" />
+        <div>
+          <h1>Outside Yet?</h1>
+          <p>Discover the weather before going out</p>
+        </div>
+      </div>
+      <nav>
+        <a href="javascript:void(0)" class="icon" onclick="navMenu()">
+          <span class="material-icons"> menu </span>
+        </a>
+        <ul id="nav">
+          <li><a href="/lesson11/home.html">Home</a></li>
+          <li><a href="/lesson11/preston.html">Preston</a></li>
+          <li><a href="/lesson11/soda_springs.html">Soda Springs</a></li>
+          <li><a href="/lesson11/fish_haven.html">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="/lesson11/gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Report A Storm</h2>
+      <form
+        action="/lesson11/thanks.html"
+        method="get"
+        id="stormForm"
+        autocomplete="off"
+      >
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="p-info">
+            <label for="fname"
+              >Full name:<br />
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                required
+                pattern="[a-z A-Z]{5,}"
+                minlength="5" /></label
+            ><br />
+            <label for="email"
+              >Email:<br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@email.com" /></label
+            ><br />
+            <label for="phone"
+              >Phone Number:<br />
+              <input type="tel" name="phone" id="phone" required /></label
+            ><br />
+            <label for="zip"
+              >Zip Code:<br />
+              <input type="number" name="zip" id="zip" required /></label
+            ><br />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Storm Information</legend>
+          <div class="s-info">
+            <label for="sDate"
+              >Storm Date:<br /><input
+                type="date"
+                name="sDate"
+                id="sDate" /></label
+            ><br />
+            <label for="sType"
+              >Storm Type:<br />
+              <datalist id="storms">
+                <option value="Flash Flood"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option>
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+              </datalist>
+              <input
+                list="storms"
+                name="sType"
+                id="sType"
+                placeholder="Select a Storm"
+              /> </label
+            ><br />
+            <label for="rating"
+              >Storm Severity:<br />
+              <input
+                type="range"
+                name="rating"
+                id="rating"
+                value="5"
+                min="1"
+                max="10"
+                step="1"
+                oninput="adjustRating(this.value)"
+                onchange="adjustRating(this.value)"
+              /><span id="rating-value">5</span></label
+            ><br />
+            <label for="region"
+              >Region:<br />
+              <select name="region" id="region">
+                <option selected disabled value="Select Region">
+                  Select Option
+                </option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+              </select></label
+            ><br />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Other Information</legend>
+          <div class="o-info">
+            <label>User in-danger:</label><br />
+            <label for="danger1">
+              <input type="radio" name="danger" id="danger1" value="yes" />
+              Yes</label
+            ><br />
+            <label for="danger2">
+              <input type="radio" name="danger" id="danger2" value="maybe" />
+              Maybe</label
+            ><br />
+            <label for="danger3">
+              <input type="radio" name="danger" id="danger3" value="no" />
+              No</label
+            ><br />
+
+            <label for="info"
+              >Additional Information/Comments:<br />
+              <textarea
+                name="info"
+                id="info"
+                cols="30"
+                rows="10"
+                form="stormForm"
+              ></textarea>
+            </label>
+            <br /><input class="submit-btn" type="submit" />
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <section class="contact-info">
+        <h3>Contact Information</h3>
+        <ul class="contact">
+          <li>
+            30 N 1st E<br />
+            Preston, ID 83263
+          </li>
+          <li>208-999-0000</li>
+          <li>outsideyet@oyw.com</li>
+        </ul>
+        <ul class="social">
+          <li>
+            <a href="#"
+              ><img src="/lesson6/images/twitter.png" alt="Twitter icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/lesson6/images/youtube.png" alt="Youtube icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/lesson6/images/facebook.png" alt="Facebook icon"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <div class="img-container">
+        <img
+          src="/lesson6/images/prestonIdahoMap.png"
+          alt="Map of Preston Idaho"
+        />
+      </div>
+      <div id="date">
+        <p id="date-p"></p>
+      </div>
+    </footer>
+  </body>
+</html>

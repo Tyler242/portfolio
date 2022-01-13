@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | BI</title>
+    <!-- JS links -->
+    <script src="/final/js/apiData.js" defer></script>
+    <script src="/final/js/nav.js" defer></script>
+    <script src="/final/js/index.js" defer></script>
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="/normalize/normalize.css" />
+    <link rel="stylesheet" href="/final/scss/header-scss/styles.css" />
+    <link rel="stylesheet" href="/final/scss/crypto-links-scss/styles.css" />
+    <link rel="stylesheet" href="/final/scss/index-scss/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img
+          src="/final/images/FullLogo_Transparent.png"
+          alt="Crypto For All Since 2021"
+        />
+      </div>
+    </header>
+    <nav id="nav">
+      <a href="javascript:void(0)" class="icon" onclick="navMenu()">
+        <span class="material-icons"> menu </span>
+      </a>
+      <ul id="nav-ul">
+        <a href="#">Home</a>
+        <a href="/final/crypto-intro.html">Learn About Crypto</a>
+        <a href="/final/news.html">News</a>
+        <a href="/final/get-involved.html">Get Involved</a>
+      </ul>
+      <marquee behavior="scroll" direction="left">Testing</marquee>
+    </nav>
+    <main>
+      <section id="crypto-links">
+        <h2>Top 10 Cryptocurrencies</h2>
+        <p>
+          Get on demand updates from the top 10 Cryptocurrencies. Select one
+          below to get conversion rates, hour, day, and week changes, and more!
+        </p>
+      </section>
+      <div id="main-content">
+        <div id="welcome">
+          <h2>Welcome!</h2>
+          <p>
+            Find all the crypto information you need to build your portfolio,
+            start mining, or get scammed.
+          </p>
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="/final/images/pexels-worldspectrum-844124(small).jpg"
+            />
+            <source
+              media="(max-width: 1200px)"
+              srcset="/final/images/pexels-worldspectrum-844124(medium).jpg"
+            />
+            <source
+              media="(max-width: 1900px)"
+              srcset="/final/images/pexels-worldspectrum-844124(large).jpg"
+            />
+            <img
+              src="/final/images/pexels-worldspectrum-844124(large).jpg"
+              alt="Bitcoin, Ethereum, and Ripple tokens together with an SD card."
+            />
+          </picture>
+        </div>
+        <div id="news">
+          <h2>News</h2>
+          <div class="container">
+            <section class="news-sect">
+              <img class="news-image" src="" alt="news icon" />
+              <h3 class="title"></h3>
+              <p class="source"></p>
+              <a class="link" href="" target="_blank">Read Full Article</a>
+            </section>
+            <section class="news-sect">
+              <img class="news-image" src="" alt="news icon" />
+              <h3 class="title"></h3>
+              <p class="source"></p>
+              <a class="link" href="" target="_blank">Read Full Article</a>
+            </section>
+            <section class="news-sect">
+              <img class="news-image" src="" alt="news icon" />
+              <h3 class="title"></h3>
+              <p class="source"></p>
+              <a class="link" href="" target="_blank">Read Full Article</a>
+            </section>
+          </div>
+        </div>
+        <div id="learn">
+          <h2>Learn About Cryptocurrency</h2>
+          <p>
+            New to crypto? Heard someone talking about blockchain technology?
+            Interested in learning more? Check out our Learn About Crypto page
+            to discover the world of crypto.
+          </p>
+          <a href="/final/crypto-intro.html">Learn More</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li class="copyright">&copy; 2021 Tyler Shellman</li>
+        <li>
+          <a
+            href="https://documenter.getpostman.com/view/5734027/RzZ6Hzr3"
+            target="_blank"
+            >API Link</a
+          >
+        </li>
+        <li class="contact">
+          Having issues? Contact us at
+          <a href="mailto:csupport@bicrypto.com">csupport@bicrypto.com</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

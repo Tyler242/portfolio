@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'small';
+
+@media screen and (min-width: 900px) {
+  @import 'medium';
+}
+
+@media screen and (min-width: 1200px) {
+  @import 'large';
+}

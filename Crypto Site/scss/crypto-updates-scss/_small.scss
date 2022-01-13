@@ -1,0 +1,46 @@
+main {
+  max-width: 960px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#main-content {
+  h2 {
+    text-align: center;
+  }
+  .abstract {
+    text-align: center;
+    margin-top: -10px;
+  }
+  form {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    .personal-info-div {
+      margin-top: 20px;
+      .personal-info {
+        background-color: $light-gray;
+      }
+    }
+    .updates-div {
+      margin: 20px 0;
+      .updates {
+        background-color: $light-gray;
+      }
+    }
+    h3 {
+      margin: 2px;
+    }
+    label {
+      line-height: 2rem;
+      input {
+        max-width: 220px;
+        width: 100%;
+      }
+    }
+    .submit {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  position: relative;
+  margin-bottom: 100px;
+}
+.hero-section aside {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 250px;
+  border: 2px solid var(--text-color);
+  background-color: var(--popout-box);
+  opacity: 0.9;
+}
+.hero-section aside h4 {
+  padding-left: 10px;
+}
+.hero-section aside p {
+  padding-left: 10px;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+
+/* MEDIUM SCREENS */
+@media screen and (max-width: 760px) {
+  .hero-section {
+    width: 100%;
+    display: block;
+    position: unset;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .hero-section aside {
+    position: unset;
+    padding-left: 20px;
+    width: unset;
+    border: unset;
+    background-color: unset;
+    opacity: unset;
+  }
+}

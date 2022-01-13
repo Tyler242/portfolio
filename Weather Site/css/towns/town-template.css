@@ -1,0 +1,29 @@
+:root {
+  --background-color: #b3c5d7;
+  --popout-box: #7392b7;
+  --text-color: #131b23;
+  --text-color2: #d8e1e9;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* MEDIUM SCREENS */
+@media screen and (max-width: 760px) {
+  main {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}

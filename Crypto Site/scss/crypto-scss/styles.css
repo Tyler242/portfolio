@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&family=Ubuntu:wght@300&display=swap");
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+marquee {
+  height: 20px;
+  margin-bottom: -5px;
+  background-color: lightgreen;
+}
+
+#main-container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+}
+
+section {
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 10px 0px;
+}
+
+#crypto-links {
+  border: none;
+  padding: 10px 30px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+#head {
+  text-align: center;
+}
+
+#head #container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+#head #container h2 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#head #container p {
+  margin-top: 0px;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+#head #container div {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#data #price {
+  font-weight: bold;
+}
+
+#links #url-div {
+  padding-bottom: 10px;
+}
+
+#links a {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  #main-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+  }
+  #main-container section {
+    margin: 10px;
+  }
+  #head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #main-container {
+    max-width: 1000px;
+  }
+  section {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

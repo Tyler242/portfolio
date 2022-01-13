@@ -1,0 +1,23 @@
+#crypto-links {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  padding: 10px 30px;
+  #crypto-ul {
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+    input {
+      margin: 5px 10px;
+      padding: 5px 10px;
+      width: 150px;
+      background-color: lightcyan;
+      border: none;
+    }
+    input:hover {
+      background-color: black;
+      color: lightcyan;
+    }
+  }
+}

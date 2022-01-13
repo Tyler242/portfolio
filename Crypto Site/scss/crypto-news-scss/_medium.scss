@@ -1,0 +1,15 @@
+.news-selection {
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+#news {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  section {
+    width: 40%;
+  }
+}

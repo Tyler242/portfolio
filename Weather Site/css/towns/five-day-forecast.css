@@ -1,0 +1,44 @@
+/* Five day forecast pop-out */
+.five-day {
+  max-width: 760px;
+  margin: 0 auto;
+  background-color: var(--popout-box);
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
+}
+.five-day h3 {
+  padding-left: 30px;
+}
+.five-day hr {
+  color: black;
+  background-color: black;
+  width: auto;
+  height: 1px;
+  border: 0px;
+}
+.five-day-img p {
+  margin-top: 0px;
+}
+.five-day-img {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+  text-align: center;
+}
+.material-icons.yellow {
+  color: yellow;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.five-day-temp {
+  padding: 10px 0 0 0;
+}
+
+/* SMALLEST SCREENS */
+@media screen and (max-width: 420px) {
+  .five-day {
+    display: none;
+  }
+}

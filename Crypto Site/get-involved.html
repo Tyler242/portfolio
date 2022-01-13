@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- JS files -->
+    <script src="/final/js/nav.js" defer></script>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="/normalize/normalize.css" />
+    <link rel="stylesheet" href="/final/scss/header-scss/styles.css" />
+    <link rel="stylesheet" href="/final/scss/crypto-updates-scss/styles.css" />
+    <title>Get Involved | BI</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img
+          src="/final/images/FullLogo_Transparent.png"
+          alt="Crypto For All Since 2021"
+        />
+      </div>
+    </header>
+    <nav id="nav">
+      <a href="javascript:void(0)" class="icon" onclick="navMenu()">
+        <span class="material-icons"> menu </span>
+      </a>
+      <ul id="nav-ul">
+        <a href="/final/index.html">Home</a>
+        <a href="/final/crypto-intro.html">Learn About Crypto</a>
+        <a href="/final/news.html">News</a>
+        <a href="#">Get Involved</a>
+      </ul>
+    </nav>
+    <main>
+      <div id="main-content">
+        <h2>Get Involved</h2>
+        <p class="abstract">
+          Want to get daily, weekly, or monthly updates? <br />Sign up below to
+          stay informed about the state of crypto.
+        </p>
+        <form
+          name="Get Updates"
+          action="/final/thanks.html"
+          method="GET"
+          autocomplete="off"
+        >
+          <div class="personal-info-div">
+            <fieldset class="personal-info">
+              <legend><h3>Personal Info</h3></legend>
+              <label for="first-name">
+                First Name<br />
+                <input
+                  type="text"
+                  name="first-name"
+                  placeholder="First Name"
+                /> </label
+              ><br />
+              <label for="last-name">
+                Last Name<br />
+                <input
+                  type="text"
+                  name="last-name"
+                  placeholder="Last Name"
+                /> </label
+              ><br />
+              <label for="email">
+                Email<br />
+                <input type="email" name="email" placeholder="Email" /> </label
+              ><br />
+            </fieldset>
+          </div>
+          <div class="updates-div">
+            <fieldset class="updates">
+              <legend><h3>Updates</h3></legend>
+              <p>How often would you like market updates?</p>
+              <input type="radio" value="day" id="day" name="updates" />
+              <label for="day">Daily</label><br />
+              <input type="radio" value="week" id="week" name="updates" />
+              <label for="week">Weekly</label><br />
+              <input type="radio" value="month" id="month" name="updates" />
+              <label for="month">Monthly</label><br />
+              <br /><br />
+            </fieldset>
+          </div>
+          <input class="submit" type="submit" value="Get Updates" />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li class="copyright">&copy; 2021 Tyler Shellman</li>
+        <li>
+          <a
+            href="https://documenter.getpostman.com/view/5734027/RzZ6Hzr3"
+            target="_blank"
+            >API Link</a
+          >
+        </li>
+        <li class="contact">
+          Having issues? Contact us at
+          <a href="mailto:csupport@bicrypto.com">csupport@bicrypto.com</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

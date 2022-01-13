@@ -1,0 +1,7 @@
+/* Emergency Banner */
+#eBanner {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  background-color: yellow;
+}

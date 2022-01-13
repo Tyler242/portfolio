@@ -1,0 +1,37 @@
+/* Article Section */
+article {
+  box-shadow: gray 2px 5px 10px;
+  border: 2px solid black;
+  max-width: 760px;
+  margin: 100px auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 16px;
+}
+
+article img {
+  width: 30%;
+  padding-top: 10px;
+  float: right;
+}
+
+.button-link:visited,
+.button-link:link {
+  text-decoration: none;
+  background-color: var(--text-color2);
+  padding: 5px;
+  border: 1px gray solid;
+  border-radius: 4px;
+  color: var(--text-color);
+}
+.button-link:hover {
+  background-color: #b4babe;
+}
+
+/* MEDIUM SCREENS */
+@media screen and (max-width: 760px) {
+  article img {
+    float: none;
+    width: 100%;
+  }
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QuoteSaverFinal</string>
+    <string name="word">Word</string>
+    <string name="source">Source</string>
+    <string name="keyword">Keyword</string>
+    <string name="search">Search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
